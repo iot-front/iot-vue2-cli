@@ -1,0 +1,22 @@
+$theme-color: #00c4bf;
+$theme-bg-color: #f5f6fa;
+$theme-text-color: #111b23;
+$theme-text-sup-color: #979aa4;
+@mixin set-sub-color($alpha) {
+	color: rgba(0, 196, 191, $alpha);
+}
+@mixin set-bg-color($alpha) {
+	background-color: rgba(0, 196, 191, $alpha);
+}
+@mixin set-border-color($alpha) {
+	background-color: rgba(0, 196, 191, $alpha);
+}
+@mixin set-shadow-color($alpha) {
+	box-shadow: 0 4px 14px 0 rgba(0, 196, 191, $alpha);
+}
+
+$font-color: #929292; //默认字体颜色
+$active-color: #0074d9;
+$active-color02: #409eff;
+$body-padding-top: 70px; //默认顶部padding,用于是否有header部分
+$border-color: #e4e7ed; //border颜色-浅

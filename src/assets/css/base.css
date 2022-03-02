@@ -1,0 +1,177 @@
+blockquote,
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+legend,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul,
+section,
+figure,
+figcaption {
+	margin: 0;
+	padding: 0;
+}
+body {
+	min-width: 1200px;
+}
+* {
+	box-sizing: border-box;
+	font-family: 'PingFangSC-Regular', 'Microsoft Yahei', 'Hiragino Sans GB', 'Helvetica Neue', 'WenQuanYi Micro Hei', '\5B8B\4F53';
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: normal;
+}
+/* elementui  table-样式改写 */
+table {
+	border-spacing: 0 !important;
+	border-collapse: separate !important;
+}
+body .el-table th.gutter {
+	display: table-cell !important;
+}
+.el-table th > .cell {
+	padding: 0 5px;
+	text-align: center;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 12px;
+	font-weight: normal;
+	color: black;
+}
+.el-table td > .cell {
+	padding: 0 5px;
+	text-align: center;
+	font-size: 12px;
+	font-weight: normal;
+	color: #333;
+}
+.el-table td .table-buttonbox {
+	margin: 5px 0;
+}
+.el-table .el-table__header-wrapper table th {
+	background: #f5f7fa;
+}
+
+.el-table .el-table__row .btn-table-ceil {
+	color: #0074d9;
+	margin: 0 6px;
+	cursor: pointer;
+	display: inline-block;
+}
+/* 上传图片样式 */
+.avatar-uploader .el-upload {
+	border: 1px dashed #d9d9d9;
+	border-radius: 6px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	float: left;
+}
+.avatar-uploader .el-upload:hover {
+	border-color: #0074d9;
+}
+.avatar-uploader .el-upload > img {
+	display: block;
+	max-width: 180px;
+	max-height: 180px;
+}
+.operation-text {
+	color: #0074d9;
+	cursor: pointer;
+	text-decoration: none;
+}
+.avatar-uploader-icon {
+	font-size: 28px;
+	color: #8c939d;
+	width: 178px;
+	height: 178px;
+	line-height: 178px;
+	text-align: center;
+}
+.avatar-uploader.upload-disabled .el-upload {
+	cursor: not-allowed;
+	border-color: #d9d9d9 !important;
+	background: #f5f7fa;
+}
+textarea.el-textarea__inner {
+	resize: none;
+}
+.el-textarea .el-input__count {
+	background: transparent;
+	width: 150px;
+	right: -160px;
+	text-align: left;
+}
+.input-show-limit .el-input__suffix {
+	width: 150px;
+	right: -155px;
+	text-align: left;
+}
+/* tabs标签页样式改写 */
+.eltab-haier {
+	position: relative;
+}
+.eltab-haier .el-tabs--card > .el-tabs__header .el-tabs__nav {
+	border: none;
+}
+.eltab-haier .el-tabs--card > .el-tabs__header .el-tabs__item {
+	min-width: 100px;
+	padding: 0 10px;
+	text-align: center;
+	border: 1px solid transparent;
+	box-sizing: content-box;
+}
+.eltab-haier .el-tabs--card > .el-tabs__header .el-tabs__item.is-active {
+	border-color: #0074d9 #e4e7ed #fff #e4e7ed;
+}
+.eltab-haier .eltab-right-lint {
+	position: absolute;
+	line-height: 36px;
+	top: 3px;
+	right: 0;
+	font-size: 12px;
+	cursor: pointer;
+	color: #0074d9;
+	z-index: 5;
+	text-decoration: none;
+}
+.servicedetail-help li:hover {
+	background: #fcfcfc;
+}
+.padding-top-25 {
+	padding-top: 25px;
+}
+.no-margin-right {
+	margin-right: 0 !important;
+}
+/* 弹出框页脚按钮居中 */
+.el-dialog__footer {
+	text-align: center !important;
+}
+.add-dev-dialog .el-dialog__wrapper .el-dialog__body {
+	max-height: 560px !important;
+	overflow-y: auto !important;
+}
