@@ -306,3 +306,13 @@ props: {
   }
 }
 ```
+
+### 代码提交
+
+```shell
+  使用
+  全局安装cz：npm install -g commitizen
+  git add .
+  git cz     
+  git push
+```

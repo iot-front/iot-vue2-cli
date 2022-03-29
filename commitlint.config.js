@@ -38,3 +38,4 @@ module.exports = {
 // body 指 commit 主体内容（长描述）
 // footer 指 commit footer 信息
 // type 指当前 commit 类型
+// https://commitlint.js.org/#/reference-rules
