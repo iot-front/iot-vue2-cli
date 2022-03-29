@@ -9,12 +9,18 @@
 </template>
 
 <script>
+import { getApplyList } from '@/apis/apply'
 
 export default {
 	name: 'Home',
 	data () {
 		return {
 		}
+	},
+	created() {
+		getApplyList({}).then(res => {
+			console.log(res)
+		})
 	}
 }
 </script>

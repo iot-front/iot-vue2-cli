@@ -9,7 +9,7 @@ export const baseapi = env === 'development' ? '/apiprod' : ''
  * @param {params} params 参数
  * @param {headers} headers 请求头
  */
-export const iotRequest = (method: string, path: string, params?: any, headers?: any) => {
+export const iotRequest = (method, path, params, headers) => {
   if (method.toLowerCase() === 'get') {
     return iotAxios.get(baseapi + path, { params: params }, headers)
   } else {

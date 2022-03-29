@@ -28,24 +28,27 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### 项目结构
 ``` javascript
 ├── src 
-│   ├── api                           // 全局配置
+│   ├── apis                          // 接口请求
+│   │   ├── api.js                    // 请求封装
+│   │   └── 其他模块                   // 各模块请求集合
 │   ├── components                    // 全局公共组件
-│   ├── assset                        // 全局配置
+│   ├── assset                        // 公共资源文件
 │   │   ├── css                       // 全局CSS
 │   │   └── images                    // 图片存储路径
+│   │   └── js                        // 通用js
 │   │   
 │   ├── router                        // 路由
-│   │   ├── product                   // 第一层级目录路由配置文件
-│   │   │   └── index.js              // 第一层级路由配置js
+│   │   ├── product.js                // 各模块路由配置js
 │   │   └── index.js                  // 主路由index.js
 │   │   
 │   ├── directives                    // 全局指令
 │   │   └── permission.js             // 权限控制
 │   │   
-│   ├── store                         // 通用枚举
-│   ├── api                           // 通用枚举
-│   ├── utils                         // 工具类处理
-│   │   
+│   ├── locales                       // 国际化
+│   │   └── en.js                     // 英文
+│   │   └── zh-cn.js                  // 中文
+│   │
+│   ├── store                         // 全局store管理
 │   └── views                         // 页面
 │   │   └── menuFile                  // 一级菜单入口文件
 │   │      ├── components             // 组件
