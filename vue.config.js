@@ -6,7 +6,13 @@ module.exports = {
 	indexPath: 'index.html',
 	outputDir: 'dist',
 	configureWebpack: {
-		entry: ['babel-polyfill', './src/main.js']
+		entry: ['babel-polyfill', './src/main.js'],
+    output: {
+      //把子应用打包成umd库格式（必须）
+      library: `${name}-[name]`,
+      libraryTarget: 'umd',
+      jsonpFunction: `webpackJsonp_${name}`,
+    }
 	},
 	css: {
 		loaderOptions: {
@@ -18,6 +24,12 @@ module.exports = {
 	devServer: {
 		port: 1212,
 		open: true,
+		hot: true,
+    disableHostCheck: true,
+    overlay: {
+      warnings: false,
+      errors: true,
+    },
 		proxy: {
 			'/apidev': {
 				target: 'http://39.107.247.209',
@@ -47,13 +59,5 @@ module.exports = {
 				}
 			}
 		}
-	},
-	configureWebpack: {
-    output: {
-      //把子应用打包成umd库格式（必须）
-      library: `${name}-[name]`,
-      libraryTarget: 'umd',
-      jsonpFunction: `webpackJsonp_${name}`,
-    }
-  }
+	}
 }

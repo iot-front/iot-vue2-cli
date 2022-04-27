@@ -8,7 +8,8 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 Vue.use(ElementUI)
 import i18n from './locales/index'
-import Components from './components/base'
+import Components from 'iot-vue2-component'
+import 'iot-vue2-component/iot-vue2-component.css'
 Vue.use(Components) //基础组件
 window.loginDateCallback = function(){	//登录过期
 	if (self != top) {
