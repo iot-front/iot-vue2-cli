@@ -9,9 +9,7 @@
 <script>
 export default {
 	name: 'ChildApp'
-}
+};
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

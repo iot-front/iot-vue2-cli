@@ -13,14 +13,17 @@
   },
   "lint-staged": {
     "*.{ts,js,vue}": [
-      "eslint --fix"
+      "npm run lint:prettier",
+      "eslint --fix",
+      "git add ."
     ]
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "element-ui": "^2.15.1",
-    "iot-axios2": "^1.0.17",
-    "iot-vue2-component": "^1.0.1",
+    "iot-axios2": "^1.1.5",
+    "haier-ui": "^1.1.19",
+    "haier-methods": "^0.0.6",
     "js-md5": "^0.7.3",
     "lodash": "^4.17.21",
     "vue": "^2.6.11",

@@ -1,4 +1,2 @@
-const router = [
-	
-]
-export default router
+const router = [];
+export default router;

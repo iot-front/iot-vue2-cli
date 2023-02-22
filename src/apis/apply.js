@@ -1,5 +1,5 @@
-import { iotRequest } from '@/apis/api'
+import { iotRequest } from '@/apis/api';
 
-export const getApplyList = (params) => {
-  return iotRequest('get', '/developercenter-api/common/environment', params)
-}
+export const getApplyList = params => {
+	return iotRequest('get', '/developercenter-api/common/environment', params);
+};

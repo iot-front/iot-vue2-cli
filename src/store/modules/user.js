@@ -4,8 +4,8 @@ const user = {
 	},
 	mutations: {
 		upUserDinfo(state, info) {
-			state.userDinfo = info || {}
+			state.userDinfo = info || {};
 		}
 	}
-}
-export default user
+};
+export default user;
