@@ -1,5 +1,9 @@
 import VueCookies from 'vue-cookies';
-// 去除字符串前后空格
+/**
+ * 去除字符串前后空格
+ * @param {string} str 要去除空格的的数据
+ * @returns 去空格后的数据
+ */
 const trim = str => {
 	if (!(str instanceof String)) {
 		return str;
